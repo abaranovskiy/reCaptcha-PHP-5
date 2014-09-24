@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Captcha": "Package"
+            "reCaptcha": "Package"
         }
     }
 }
