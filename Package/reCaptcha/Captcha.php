@@ -95,6 +95,24 @@
 		protected $theme = null;
 
 		/**
+		 * Singleton instance
+		 *
+		 * @var Captcha
+		 */
+		protected static $instance;
+
+		/**
+		 * @return static
+		 */
+		protected static function me()
+		{
+			if (!self::$instance)
+				self::$instance = new static();
+
+			return self::$instance;
+		}
+
+		/**
 		 * Generates reCaptcha form to output to your end user
 		 *
 		 * @throws Exception
