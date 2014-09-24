@@ -5,7 +5,7 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 // New captcha instance
-$captcha = new Captcha\Captcha();
+$captcha = new reCaptcha\Captcha();
 $captcha->setPublicKey('publickey');
 $captcha->setPrivateKey('privatekey');
 
