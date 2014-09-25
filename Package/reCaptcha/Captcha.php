@@ -104,7 +104,7 @@
 		/**
 		 * @return static
 		 */
-		protected static function me()
+		public static function me()
 		{
 			if (!self::$instance)
 				self::$instance = new static();
